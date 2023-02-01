@@ -1,0 +1,801 @@
+@font-face{
+
+  font-family: 'TTNorms';
+  src:url(./fonts/TTNorms-Medium.ttf);
+  font-weight: normal;
+  font-style: normal;
+  
+}
+@font-face{
+
+  font-family: 'TTNorms';
+  src:url(./fonts/TTNorms-ExtraBold.ttf);
+  font-weight: bold;
+  font-style: normal;
+  
+}
+*{
+  font-family: 'TTNorms' , sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+main{
+  background-color: #1a1a22;
+  z-index: 1;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  text-decoration: none;
+}
+h2
+{
+  font-weight:bold;
+  font-size: 70px;
+}
+
+.container-fluid{
+  padding:0px;
+  margin:0px;
+}
+.row{
+  margin:0px;
+}
+.pos-center
+{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-page-info
+{
+  background-image: url(./img/main-background.jpg);
+  height: 945px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-decoration: none;
+}
+.main-logo
+{
+    background-image: url(./img/main-logo.png);
+    max-width: 500px;
+    min-height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-decoration: none;
+
+}
+.main-block
+{
+  padding-top: 10%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.navbar a  {
+  color: white !important;
+  text-align: center;
+}
+.navbar a:hover  {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+  text-decoration: none;
+  text-decoration-color: none;
+}
+.bg-dark
+{
+  background: linear-gradient(180deg, rgba(32, 32, 38,100) 15%, rgba(255, 255, 255, 0) 100%) !important;
+}
+.Buy-btn-div
+{
+  width: 300px;
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+}
+.Buy-btn
+{
+
+
+  background-image: url(./img/mt/st/button_bg.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  padding-top: 25px;
+  padding-left: 115px;
+  width: 300px;
+  height: 95px;
+  color: #ffcb7d;
+  font-size: 30px;
+  font-weight:bold;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 1);
+  display: inline-block;
+}
+.Buy-btn:hover
+{
+  color: #ffcb7d;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 1);
+}
+.Buy-btn-div::before
+{
+  content:'';
+  background-image: url(./img/mt/illustrations/Chests/Immortal_Chest_png.png);
+  width: 200px;
+  height: 150px; 
+  left: -60px;
+  top: -30px;
+  position:absolute;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  display:inline-flex;
+}
+
+.stand-container
+{
+  margin-top: 50px;
+  position: relative;
+}
+.stand-text-fire , .stand-text-water , .stand-text-air , .stand-text-earth
+{
+  padding-top: 130px;
+  position: relative;
+}
+.stand-mage
+{
+  
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  height: 800px;
+}
+.stand-fire
+{
+  background-image: url(./img/standmages/fire-mage-stand.png);
+}
+.stand-water
+{
+  background-image: url(./img/standmages/stand-water-mage.png);
+}
+.stand-earth
+{
+  background-image: url(./img/standmages/stand-earth-mage-2.png);
+}
+.stand-air
+{
+  background-image: url(./img/standmages/stand-air-mage.png);
+}
+.stand-btn-container
+{
+  margin-top: 15px;
+  display: flex;
+  text-align: center;
+
+  margin-bottom: 15px;
+}
+.stand-btn-div
+{
+  width: 75px;
+  height: 75px;
+}
+.stand-btn-div div
+{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stand-btn
+{
+  background-image: url(./img/standmages/stand-yellow-btn.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  height: 35px;
+  width: 35px;
+}
+.stand-btn-fire{
+  background-image: url(./img/standmages/stand-yellow-btn.png);
+}
+.stand-btn-water{
+  background-image: url(./img/standmages/stand-water-btn.png);
+}
+.stand-btn-earth{
+  background-image: url(./img/standmages/stand-earth-btn.png);
+}
+.stand-btn-air{
+  background-image: url(./img/standmages/stand-ait-btn.png);
+}
+.stand-btn-noactive
+{
+  background-image: url(./img/standmages/stand-noactive-btn.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  height: 30px;
+  width: 30px;
+}
+.stand-text-noactive
+{
+  color: #4d4d51;
+  font-size: 18px;
+}
+.stand-text-active
+{
+  color: white;
+  font-size: 18px;
+}
+
+.stand-container::before
+{
+  content:'';
+  position: absolute; 
+  display: block;
+  top:-50px;
+  height: 100%;
+  width: 90%;
+  background-image: url(./img/standmages/fire-mage-stand-back.png);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  
+}
+.stand-text-fire::before
+{
+  content:'';
+  position: absolute; 
+  display:block;
+  left: -25%;
+  top:  80px;
+  height: 120px;
+  width: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(./img/standmages/human-fire-back.png);
+}
+.stand-text-water::before
+{
+  content:'';
+  position: absolute; 
+  display:block;
+  left: -25%;
+  top:  80px;
+  height: 120px;
+  width: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(./img/standmages/stand-water-text-back.png);
+}
+.stand-text-earth::before
+{
+  content:'';
+  position: absolute; 
+  display:block;
+  left: -25%;
+  top:  80px;
+  height: 120px;
+  width: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(./img/standmages/stand-earthr-text-back.png);
+}
+.stand-text-air::before
+{
+  content:'';
+  position: absolute; 
+  display:block;
+  left: -30%;
+  top:  80px;
+  height: 120px;
+  width: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(./img/standmages/stand-air-text-back.png);
+}
+
+
+
+.stand-stones::before
+{
+  content:'';
+  position: absolute; 
+  display: block;
+  top:550px;
+  left: -200px;
+  height: 300px;
+  width: 340px;
+  background-image: url(./img/standmages/stand-stone-2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  animation-name: stand-stone-animation-2;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.stand-stones::after
+{
+  content:'';
+  position: absolute; 
+  display: block;
+  left: 1350px;
+  top: 300px;
+  height: 300px;
+  width: 210px;
+  background-image: url(./img/standmages/stand-stone.png);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  animation-name:  stand-stone-animation-1;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.stand-card
+{
+  
+  background-image: url(./img/standmages/stand-card.png);
+  margin-top: 5px ;
+  height: 90px;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+}
+
+.ground-container
+{
+  margin-top: 100px;
+  position: relative;
+}
+.ground-text
+{
+  margin-top: 75px;
+}
+.ground-image
+{
+  background-image: url(./img/ground/ground-island-1-1.png);
+  height: 500px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-decoration: none;
+}
+.ground-container::before
+{
+  content:'';
+  position: absolute; 
+  display:block;
+  height: 140px;
+  top: 15px;
+  right:35%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(./img/ground/ground-text.png);
+}
+
+/*
+.ground-image::before
+{
+  content: '';
+  position: absolute; 
+  display:block;
+  z-index: 10;
+  height: 640px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(./img/ground/ground-island1-back.png);
+}
+*/
+.token-container
+{
+  margin-top: 200px;
+  position: relative;
+}
+.token-container h2
+{
+  text-align: center;
+}
+.token-container h3
+{
+  text-align: center;
+  color: #626265;
+  font-size: 20px;
+}
+.token-text
+{
+  padding-left: 35px;
+  padding-top: 25px;
+  font-size: 19px;
+}
+.token-text-indent
+{
+  text-indent: 15px;
+  padding-top: 0px !important;
+}
+.token-container::before
+{
+  content:'';
+  position: absolute; 
+  display:block;
+  height: 110px;
+  top: -50px;
+  left: -10px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(./img/token/token-text.png);
+}
+.token-images
+{
+  height:510px;
+  margin-bottom: 500px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  background-image: url(./img/token/token-images-main.png);
+}
+.token-container::after
+{
+  content:'';
+  position: absolute; 
+  display:block;
+  height: 510px;
+  top:0px;
+  left: -10%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-image: url(./img/token/token-images-main-back.png);
+}
+
+.token-container-icon
+{
+  margin-top: 400px;
+}
+.token-icon-1,.token-icon-2,.token-icon-3,.token-icon-4
+{
+  height: 135px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.token-icon-1
+{
+  background-image: url(./img/token/token-icon-1.png);
+}
+.token-icon-2
+{
+  background-image: url(./img/token/token-icon-2.png);
+}
+.token-icon-3
+{
+  background-image: url(./img/token/token-icon-3.png);
+}
+.token-icon-4
+{
+  background-image: url(./img/token/token-icon-4.png);
+}
+
+/*last*/
+.last-container
+{
+  background-image: url(./img/second-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tokenomic-container
+{
+  margin-top: 50px;
+  position: relative;
+}
+.tokenomic-text h2
+{
+  text-align: center;
+}
+.tokenomic-image
+{
+  background-image: url(./img/tokenomic/tokenomic-round-image.png);
+  height: 260px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.li-1
+{
+  list-style-image:url(./img/tokenomic/tokenomic-ball-1.png);
+}
+.li-2
+{
+  list-style-image:url(./img/tokenomic/tokenomic-ball-2.png);
+}
+.li-3
+{
+  list-style-image:url(./img/tokenomic/tokenomic-ball-3.png);
+}
+.li-4
+{
+  list-style-image:url(./img/tokenomic/tokenomic-ball-4.png);
+}
+.li-5
+{
+  list-style-image:url(./img/tokenomic/tokenomic-ball-5.png);
+}
+.li-6
+{
+  list-style-image:url(./img/tokenomic/tokenomic-ball-6.png);
+}
+.tokenomic-ul li
+{
+  padding-top: 25px;
+}
+
+.tokenomic-container::before
+{
+  content:'';
+  position: absolute; 
+  display:block;
+  height: 120px;
+  top: -50px;
+  left: 10%;
+  width: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(./img/tokenomic/tokenomic-text.png);
+}
+.tokenomic-back-girl::before
+{
+  content:'';
+  position: absolute; 
+  display:block;
+  height: 700px;
+  width: 700px;
+  left: 60%;
+  top: -300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(./img/tokenomic/tokenomic-girl-back.png);
+}
+
+
+.buy-now-btn-2
+{
+  margin-top: 400px;
+  display: block;
+  height: 340px;
+  background-image: url(./img/buy-now.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
+
+
+.buy-now-container
+{
+  
+  margin-top: 325px;
+}
+.buy-now-back
+{
+  position: relative;
+  height: 340px;
+  background-image: url(./img/buy-now-2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+}
+
+.buy-now-back::before
+{
+  content:'';
+  position: absolute; 
+  display:none;
+  top: 100px;
+  left: 10%;
+  height: 175px;
+  width: 330px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(./img/buy-now-stones-2.png);
+}
+.buy-now-back::after
+{
+  content:'';
+  position: absolute; 
+  display:none;
+  top: 50px;
+  left: 75%;
+  height: 270px;
+  width: 250px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(./img/buy-now-stones.png);
+}
+
+.buy-now-btn-last
+{
+  display: block;
+  width: 220px;
+  height: 120px;
+  background-image: url(./img/buy-now-btn.png);
+  margin-left: auto;
+  margin-right: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  animation-name: buy-now-btn-animation;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.buy-now-btn-last:hover
+{
+  animation-play-state: paused;
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+
+@keyframes buy-now-btn-animation
+{
+  0%
+  {
+    margin-top: 40px;
+  }
+  50%
+  {
+    margin-top: 80px;
+  }
+  100%
+  {
+    margin-top: 40px;
+  }
+}
+@keyframes stand-stone-animation-1
+{
+  0%
+  {
+    margin-top: 0px;
+  }
+  50%
+  {
+    margin-top: 105px;
+  }
+  100%
+  {
+    margin-top: 0px;
+  }
+}
+
+@keyframes stand-stone-animation-2
+{
+  0%
+  {
+    margin-top: 0px;
+  }
+  50%
+  {
+    margin-top: 95px;
+  }
+  100%
+  {
+    margin-top: 0px;
+  }
+}
+
+
+
+.footer-logo-img
+{
+  min-height: 100px;
+  margin-bottom: 15px;
+}
+.footer-container
+{
+  margin-top: 40px;
+}
+.footer-container h3
+{
+  font-weight: bold;
+  
+}
+.footer-container ul
+{
+  list-style: none;
+  padding-left: 0px;
+}
+.footer-logo-img
+{
+  background-image: url(./img/footer-logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+
+.new-h2
+{
+  font-weight: normal;
+  font-size: 55px;
+}
+
+.invisible
+{
+  display: none;
+}
+
+@media screen and (max-width: 1700px){
+
+  .stand-stones::before{
+    display: none;
+  }
+  .stand-stones::after{
+    display: none;
+  }
+  .tokenomic-back-girl::before{
+    display: none;
+  }
+  .buy-now-back::before{
+    display: none;
+  }
+  .buy-now-back::after{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .stand-text-fire , .stand-text-water , .stand-text-air , .stand-text-earth
+  {
+    padding-top: 50px;
+  }
+  .stand-mage{
+    height: 550px;
+    background-size: contain;
+  }
+  .ground-container::before{
+    display: none;
+  }
+  .tokenomic-container::before{
+    display: none;
+  }
+  .token-container::before{
+    display: none;
+  }
+  .stand-text-water::before{
+    display: none;
+  }
+  .stand-text-earth::before{
+    display: none;
+  }
+  .stand-text-air::before{
+    display: none;
+  }
+  .stand-text-fire::before{
+    display: none;
+  }
+  .token-container::after{
+    display: none;
+  }
+  .stand-container::before{
+    display: none;
+  }
+  #Tokenomic-h2{
+    font-weight: normal;
+    font-size: 55px;
+  }
+  #footer{
+    text-align: center;
+  }
+
+}
